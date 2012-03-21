@@ -48,6 +48,7 @@ Gem::Specification.new do |s|
     "lib/vimeo/simple/group.rb",
     "lib/vimeo/simple/user.rb",
     "lib/vimeo/simple/video.rb",
+    "lib/vimeo/o_embed.rb",
     "test/fixtures/advanced/album/add_to_watch_later.json",
     "test/fixtures/advanced/album/add_video.json",
     "test/fixtures/advanced/album/create.json",
@@ -162,6 +163,7 @@ Gem::Specification.new do |s|
     "test/fixtures/simple/user/subscriptions.json",
     "test/fixtures/simple/user/videos.json",
     "test/fixtures/simple/video/info.json",
+    "test/fixtures/o_embed/get_info.json",
     "test/test_helper.rb",
     "test/vimeo/advanced/album_test.rb",
     "test/vimeo/advanced/auth_test.rb",
@@ -184,6 +186,7 @@ Gem::Specification.new do |s|
     "test/vimeo/simple/user_test.rb",
     "test/vimeo/simple/video_test.rb",
     "test/vimeo/simple_test.rb",
+    "test/vimeo/o_embed_test.rb",
     "test/vimeo_test.rb",
     "vimeo.gemspec"
   ]
@@ -201,6 +204,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<shoulda>, [">= 2.11.3"])
       s.add_development_dependency(%q<fakeweb>, [">= 1.2.6"])
       s.add_development_dependency(%q<ruby-prof>, [">= 0.9.2"])
+      s.add_development_dependency(%q<jeweler>, [">= 1.8.3"])
       s.add_runtime_dependency(%q<httparty>, [">= 0.4.5"])
       s.add_runtime_dependency(%q<json>, [">= 1.1.9"])
       s.add_runtime_dependency(%q<oauth>, [">= 0.4.3"])
